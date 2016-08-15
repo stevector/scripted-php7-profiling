@@ -17,15 +17,6 @@ git push
 sleep 30
 
 cd ..
-terminus site clear-cache
-terminus drush "config-list"
-terminus drush role-list
-terminus drush help
-terminus drush pml
-terminus drush status
-terminus drush views-list
-terminus drush watchdog-list
-
 ./execute-behat.sh
 
 
