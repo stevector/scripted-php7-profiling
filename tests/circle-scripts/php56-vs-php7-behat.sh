@@ -1,3 +1,6 @@
+#!/bin/bash
+
+set -ex
 
 terminus site clear-cache
 terminus drush "config-list"
