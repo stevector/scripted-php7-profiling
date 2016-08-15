@@ -1,3 +1,5 @@
 # This repo is more like an application
-# than 
+# than distributed library. Verion control
+# composer.lock, but not vendor.
 /vendor
+/tests/circle-scripts/php-profiling-steve/
