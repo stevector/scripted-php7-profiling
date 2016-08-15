@@ -32,4 +32,4 @@ test:
     - cd tests/circle-scripts && ./setup-d8-repo.sh
 
   override:
-    - cd tests/circle-scripts && ./execute-behat.sh
+    - cd tests/circle-scripts && ./php56-vs-php7-behat.sh
