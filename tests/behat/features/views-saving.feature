@@ -31,6 +31,10 @@ Feature: Views Form Mode
 
     When I visit "admin/structure/block"
     And I press "Save blocks"
+    
+    When I visit "admin/content"
+    When I visit "admin/content/comment"
+    When I visit "admin/content/files"
 
 
 
