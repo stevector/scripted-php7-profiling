@@ -43,7 +43,7 @@ Feature: Views Form Mode
 
 
 
-When I visit "admin/structure/types/manage/article/form-display"
+    When I visit "admin/structure/types/manage/article/form-display"
     And I press the "Save" button
 
     When I visit "admin/structure/types/manage/article/fields/node.article.comment"
