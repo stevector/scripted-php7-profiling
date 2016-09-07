@@ -31,6 +31,10 @@ Feature: Views Form Mode
 
     When I visit "admin/structure/block"
     And I press "Save blocks"
+    
+    When I visit "admin/content"
+    When I visit "admin/content/comment"
+    When I visit "admin/content/files"
 
 
 
@@ -66,6 +70,10 @@ Feature: Views Form Mode
 
     When I visit "admin/structure/block"
     And I press "Save blocks"
+    
+    When I visit "admin/content"
+    When I visit "admin/content/comment"
+    When I visit "admin/content/files"
 
 
 
@@ -74,7 +82,7 @@ Feature: Views Form Mode
 
 
 
-    When I visit "admin/structure/types/manage/article/form-display"
+When I visit "admin/structure/types/manage/article/form-display"
     And I press the "Save" button
 
     When I visit "admin/structure/types/manage/article/fields/node.article.comment"
@@ -101,6 +109,10 @@ Feature: Views Form Mode
 
     When I visit "admin/structure/block"
     And I press "Save blocks"
+    
+    When I visit "admin/content"
+    When I visit "admin/content/comment"
+    When I visit "admin/content/files"
 
 
 
@@ -109,7 +121,7 @@ Feature: Views Form Mode
 
 
 
-    When I visit "admin/structure/types/manage/article/form-display"
+When I visit "admin/structure/types/manage/article/form-display"
     And I press the "Save" button
 
     When I visit "admin/structure/types/manage/article/fields/node.article.comment"
@@ -136,6 +148,10 @@ Feature: Views Form Mode
 
     When I visit "admin/structure/block"
     And I press "Save blocks"
+    
+    When I visit "admin/content"
+    When I visit "admin/content/comment"
+    When I visit "admin/content/files"
 
 
 
@@ -144,7 +160,7 @@ Feature: Views Form Mode
 
 
 
-    When I visit "admin/structure/types/manage/article/form-display"
+When I visit "admin/structure/types/manage/article/form-display"
     And I press the "Save" button
 
     When I visit "admin/structure/types/manage/article/fields/node.article.comment"
@@ -171,6 +187,10 @@ Feature: Views Form Mode
 
     When I visit "admin/structure/block"
     And I press "Save blocks"
+    
+    When I visit "admin/content"
+    When I visit "admin/content/comment"
+    When I visit "admin/content/files"
 
 
 
@@ -179,7 +199,7 @@ Feature: Views Form Mode
 
 
 
-    When I visit "admin/structure/types/manage/article/form-display"
+When I visit "admin/structure/types/manage/article/form-display"
     And I press the "Save" button
 
     When I visit "admin/structure/types/manage/article/fields/node.article.comment"
@@ -206,6 +226,10 @@ Feature: Views Form Mode
 
     When I visit "admin/structure/block"
     And I press "Save blocks"
+    
+    When I visit "admin/content"
+    When I visit "admin/content/comment"
+    When I visit "admin/content/files"
 
 
 
@@ -214,7 +238,7 @@ Feature: Views Form Mode
 
 
 
-    When I visit "admin/structure/types/manage/article/form-display"
+When I visit "admin/structure/types/manage/article/form-display"
     And I press the "Save" button
 
     When I visit "admin/structure/types/manage/article/fields/node.article.comment"
@@ -241,6 +265,10 @@ Feature: Views Form Mode
 
     When I visit "admin/structure/block"
     And I press "Save blocks"
+    
+    When I visit "admin/content"
+    When I visit "admin/content/comment"
+    When I visit "admin/content/files"
 
 
 
@@ -249,7 +277,7 @@ Feature: Views Form Mode
 
 
 
-    When I visit "admin/structure/types/manage/article/form-display"
+When I visit "admin/structure/types/manage/article/form-display"
     And I press the "Save" button
 
     When I visit "admin/structure/types/manage/article/fields/node.article.comment"
@@ -276,6 +304,10 @@ Feature: Views Form Mode
 
     When I visit "admin/structure/block"
     And I press "Save blocks"
+    
+    When I visit "admin/content"
+    When I visit "admin/content/comment"
+    When I visit "admin/content/files"
 
 
 
@@ -284,7 +316,7 @@ Feature: Views Form Mode
 
 
 
-    When I visit "admin/structure/types/manage/article/form-display"
+When I visit "admin/structure/types/manage/article/form-display"
     And I press the "Save" button
 
     When I visit "admin/structure/types/manage/article/fields/node.article.comment"
@@ -311,6 +343,10 @@ Feature: Views Form Mode
 
     When I visit "admin/structure/block"
     And I press "Save blocks"
+    
+    When I visit "admin/content"
+    When I visit "admin/content/comment"
+    When I visit "admin/content/files"
 
 
 
@@ -319,7 +355,7 @@ Feature: Views Form Mode
 
 
 
-    When I visit "admin/structure/types/manage/article/form-display"
+When I visit "admin/structure/types/manage/article/form-display"
     And I press the "Save" button
 
     When I visit "admin/structure/types/manage/article/fields/node.article.comment"
@@ -346,6 +382,10 @@ Feature: Views Form Mode
 
     When I visit "admin/structure/block"
     And I press "Save blocks"
+    
+    When I visit "admin/content"
+    When I visit "admin/content/comment"
+    When I visit "admin/content/files"
 
 
 
@@ -354,7 +394,7 @@ Feature: Views Form Mode
 
 
 
-    When I visit "admin/structure/types/manage/article/form-display"
+When I visit "admin/structure/types/manage/article/form-display"
     And I press the "Save" button
 
     When I visit "admin/structure/types/manage/article/fields/node.article.comment"
@@ -381,6 +421,10 @@ Feature: Views Form Mode
 
     When I visit "admin/structure/block"
     And I press "Save blocks"
+    
+    When I visit "admin/content"
+    When I visit "admin/content/comment"
+    When I visit "admin/content/files"
 
 
 
@@ -389,7 +433,7 @@ Feature: Views Form Mode
 
 
 
-    When I visit "admin/structure/types/manage/article/form-display"
+When I visit "admin/structure/types/manage/article/form-display"
     And I press the "Save" button
 
     When I visit "admin/structure/types/manage/article/fields/node.article.comment"
@@ -416,6 +460,10 @@ Feature: Views Form Mode
 
     When I visit "admin/structure/block"
     And I press "Save blocks"
+    
+    When I visit "admin/content"
+    When I visit "admin/content/comment"
+    When I visit "admin/content/files"
 
 
 
@@ -424,7 +472,7 @@ Feature: Views Form Mode
 
 
 
-    When I visit "admin/structure/types/manage/article/form-display"
+When I visit "admin/structure/types/manage/article/form-display"
     And I press the "Save" button
 
     When I visit "admin/structure/types/manage/article/fields/node.article.comment"
@@ -451,6 +499,10 @@ Feature: Views Form Mode
 
     When I visit "admin/structure/block"
     And I press "Save blocks"
+    
+    When I visit "admin/content"
+    When I visit "admin/content/comment"
+    When I visit "admin/content/files"
 
 
 
@@ -459,7 +511,7 @@ Feature: Views Form Mode
 
 
 
-    When I visit "admin/structure/types/manage/article/form-display"
+When I visit "admin/structure/types/manage/article/form-display"
     And I press the "Save" button
 
     When I visit "admin/structure/types/manage/article/fields/node.article.comment"
@@ -486,6 +538,10 @@ Feature: Views Form Mode
 
     When I visit "admin/structure/block"
     And I press "Save blocks"
+    
+    When I visit "admin/content"
+    When I visit "admin/content/comment"
+    When I visit "admin/content/files"
 
 
 
@@ -494,7 +550,7 @@ Feature: Views Form Mode
 
 
 
-    When I visit "admin/structure/types/manage/article/form-display"
+When I visit "admin/structure/types/manage/article/form-display"
     And I press the "Save" button
 
     When I visit "admin/structure/types/manage/article/fields/node.article.comment"
@@ -521,6 +577,10 @@ Feature: Views Form Mode
 
     When I visit "admin/structure/block"
     And I press "Save blocks"
+    
+    When I visit "admin/content"
+    When I visit "admin/content/comment"
+    When I visit "admin/content/files"
 
 
 
@@ -529,7 +589,7 @@ Feature: Views Form Mode
 
 
 
-    When I visit "admin/structure/types/manage/article/form-display"
+When I visit "admin/structure/types/manage/article/form-display"
     And I press the "Save" button
 
     When I visit "admin/structure/types/manage/article/fields/node.article.comment"
@@ -556,6 +616,10 @@ Feature: Views Form Mode
 
     When I visit "admin/structure/block"
     And I press "Save blocks"
+    
+    When I visit "admin/content"
+    When I visit "admin/content/comment"
+    When I visit "admin/content/files"
 
 
 
@@ -564,7 +628,7 @@ Feature: Views Form Mode
 
 
 
-    When I visit "admin/structure/types/manage/article/form-display"
+When I visit "admin/structure/types/manage/article/form-display"
     And I press the "Save" button
 
     When I visit "admin/structure/types/manage/article/fields/node.article.comment"
@@ -591,6 +655,10 @@ Feature: Views Form Mode
 
     When I visit "admin/structure/block"
     And I press "Save blocks"
+    
+    When I visit "admin/content"
+    When I visit "admin/content/comment"
+    When I visit "admin/content/files"
 
 
 
@@ -599,7 +667,7 @@ Feature: Views Form Mode
 
 
 
-    When I visit "admin/structure/types/manage/article/form-display"
+When I visit "admin/structure/types/manage/article/form-display"
     And I press the "Save" button
 
     When I visit "admin/structure/types/manage/article/fields/node.article.comment"
@@ -626,6 +694,10 @@ Feature: Views Form Mode
 
     When I visit "admin/structure/block"
     And I press "Save blocks"
+    
+    When I visit "admin/content"
+    When I visit "admin/content/comment"
+    When I visit "admin/content/files"
 
 
 
@@ -634,7 +706,7 @@ Feature: Views Form Mode
 
 
 
-    When I visit "admin/structure/types/manage/article/form-display"
+When I visit "admin/structure/types/manage/article/form-display"
     And I press the "Save" button
 
     When I visit "admin/structure/types/manage/article/fields/node.article.comment"
@@ -661,6 +733,10 @@ Feature: Views Form Mode
 
     When I visit "admin/structure/block"
     And I press "Save blocks"
+    
+    When I visit "admin/content"
+    When I visit "admin/content/comment"
+    When I visit "admin/content/files"
 
 
 
@@ -669,7 +745,7 @@ Feature: Views Form Mode
 
 
 
-    When I visit "admin/structure/types/manage/article/form-display"
+When I visit "admin/structure/types/manage/article/form-display"
     And I press the "Save" button
 
     When I visit "admin/structure/types/manage/article/fields/node.article.comment"
@@ -696,6 +772,10 @@ Feature: Views Form Mode
 
     When I visit "admin/structure/block"
     And I press "Save blocks"
+    
+    When I visit "admin/content"
+    When I visit "admin/content/comment"
+    When I visit "admin/content/files"
 
 
 
@@ -704,7 +784,7 @@ Feature: Views Form Mode
 
 
 
-    When I visit "admin/structure/types/manage/article/form-display"
+When I visit "admin/structure/types/manage/article/form-display"
     And I press the "Save" button
 
     When I visit "admin/structure/types/manage/article/fields/node.article.comment"
@@ -731,6 +811,10 @@ Feature: Views Form Mode
 
     When I visit "admin/structure/block"
     And I press "Save blocks"
+    
+    When I visit "admin/content"
+    When I visit "admin/content/comment"
+    When I visit "admin/content/files"
 
 
 
@@ -739,7 +823,7 @@ Feature: Views Form Mode
 
 
 
-    When I visit "admin/structure/types/manage/article/form-display"
+When I visit "admin/structure/types/manage/article/form-display"
     And I press the "Save" button
 
     When I visit "admin/structure/types/manage/article/fields/node.article.comment"
@@ -766,6 +850,10 @@ Feature: Views Form Mode
 
     When I visit "admin/structure/block"
     And I press "Save blocks"
+    
+    When I visit "admin/content"
+    When I visit "admin/content/comment"
+    When I visit "admin/content/files"
 
 
 
@@ -774,7 +862,7 @@ Feature: Views Form Mode
 
 
 
-    When I visit "admin/structure/types/manage/article/form-display"
+When I visit "admin/structure/types/manage/article/form-display"
     And I press the "Save" button
 
     When I visit "admin/structure/types/manage/article/fields/node.article.comment"
@@ -801,6 +889,10 @@ Feature: Views Form Mode
 
     When I visit "admin/structure/block"
     And I press "Save blocks"
+    
+    When I visit "admin/content"
+    When I visit "admin/content/comment"
+    When I visit "admin/content/files"
 
 
 
@@ -809,7 +901,7 @@ Feature: Views Form Mode
 
 
 
-    When I visit "admin/structure/types/manage/article/form-display"
+When I visit "admin/structure/types/manage/article/form-display"
     And I press the "Save" button
 
     When I visit "admin/structure/types/manage/article/fields/node.article.comment"
@@ -836,6 +928,10 @@ Feature: Views Form Mode
 
     When I visit "admin/structure/block"
     And I press "Save blocks"
+    
+    When I visit "admin/content"
+    When I visit "admin/content/comment"
+    When I visit "admin/content/files"
 
 
 
@@ -844,7 +940,7 @@ Feature: Views Form Mode
 
 
 
-    When I visit "admin/structure/types/manage/article/form-display"
+When I visit "admin/structure/types/manage/article/form-display"
     And I press the "Save" button
 
     When I visit "admin/structure/types/manage/article/fields/node.article.comment"
@@ -871,6 +967,10 @@ Feature: Views Form Mode
 
     When I visit "admin/structure/block"
     And I press "Save blocks"
+    
+    When I visit "admin/content"
+    When I visit "admin/content/comment"
+    When I visit "admin/content/files"
 
 
 
@@ -879,7 +979,7 @@ Feature: Views Form Mode
 
 
 
-    When I visit "admin/structure/types/manage/article/form-display"
+When I visit "admin/structure/types/manage/article/form-display"
     And I press the "Save" button
 
     When I visit "admin/structure/types/manage/article/fields/node.article.comment"
@@ -906,6 +1006,10 @@ Feature: Views Form Mode
 
     When I visit "admin/structure/block"
     And I press "Save blocks"
+    
+    When I visit "admin/content"
+    When I visit "admin/content/comment"
+    When I visit "admin/content/files"
 
 
 
@@ -914,7 +1018,7 @@ Feature: Views Form Mode
 
 
 
-    When I visit "admin/structure/types/manage/article/form-display"
+When I visit "admin/structure/types/manage/article/form-display"
     And I press the "Save" button
 
     When I visit "admin/structure/types/manage/article/fields/node.article.comment"
@@ -941,6 +1045,10 @@ Feature: Views Form Mode
 
     When I visit "admin/structure/block"
     And I press "Save blocks"
+    
+    When I visit "admin/content"
+    When I visit "admin/content/comment"
+    When I visit "admin/content/files"
 
 
 
@@ -949,7 +1057,7 @@ Feature: Views Form Mode
 
 
 
-    When I visit "admin/structure/types/manage/article/form-display"
+When I visit "admin/structure/types/manage/article/form-display"
     And I press the "Save" button
 
     When I visit "admin/structure/types/manage/article/fields/node.article.comment"
@@ -976,6 +1084,10 @@ Feature: Views Form Mode
 
     When I visit "admin/structure/block"
     And I press "Save blocks"
+    
+    When I visit "admin/content"
+    When I visit "admin/content/comment"
+    When I visit "admin/content/files"
 
 
 
@@ -984,7 +1096,7 @@ Feature: Views Form Mode
 
 
 
-    When I visit "admin/structure/types/manage/article/form-display"
+When I visit "admin/structure/types/manage/article/form-display"
     And I press the "Save" button
 
     When I visit "admin/structure/types/manage/article/fields/node.article.comment"
@@ -1011,3 +1123,16 @@ Feature: Views Form Mode
 
     When I visit "admin/structure/block"
     And I press "Save blocks"
+    
+    When I visit "admin/content"
+    When I visit "admin/content/comment"
+    When I visit "admin/content/files"
+
+
+
+
+
+
+
+
+
