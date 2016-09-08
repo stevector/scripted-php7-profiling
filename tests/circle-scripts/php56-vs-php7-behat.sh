@@ -11,7 +11,7 @@ sleep 60
 
 cd ${TERMINUS_SITE}
 
-echo "php_version: 5.6" >> pantheon.yml
+echo "php_version: 5.6 " >> pantheon.yml
 
 git add pantheon.yml
 git commit -m 'Setting php 5.6'
