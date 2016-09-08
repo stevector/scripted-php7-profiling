@@ -23,7 +23,9 @@ sleep 15
 composer config repositories.drupal composer https://packages.drupal.org/8
 composer require drupal/lcache:1.x-dev
 
-git add pantheon.yml
+# A .git directory might in modules/lcache/
+git add modules/lcache/*
+git add .
 git commit -m 'Adding LCache'
 git push
 
