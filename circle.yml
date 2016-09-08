@@ -5,7 +5,8 @@ machine:
     version: 7.0.7
   environment:
     # DB config. Using default CircleCI's database.
-    TERMINUS_ENV: ci-$(echo $CIRCLE_SHA1 | cut -c1-8)
+    #TERMINUS_ENV: ci-$(echo $CIRCLE_SHA1 | cut -c1-8)
+    TERMINUS_ENV: ci-$CIRCLE_BUILD_NUM
     TERMINUS_SITE: php-profiling-steve
 
 dependencies:
