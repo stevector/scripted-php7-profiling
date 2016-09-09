@@ -1,7 +1,7 @@
 <?php
 
+namespace scripted_php7_profiling\Behat;
 
-namespace WPLCache\Behat;
 
 use Behat\Behat\Context\Context;
 use Behat\Behat\Context\SnippetAcceptingContext;
@@ -20,7 +20,7 @@ class PerformanceHelpers implements Context, SnippetAcceptingContext {
   public function gatherContexts(BeforeScenarioScope $scope)
   {
       $environment = $scope->getEnvironment();
-      $this->minkContext = $environment->getContext('Behat\MinkExtension\Context\MinkContext');
+      $this->minkContext = $environment->getContext('Drupal\DrupalExtension\Context\MinkContext');
   }
 
   /**
@@ -61,7 +61,7 @@ class PerformanceHelpers implements Context, SnippetAcceptingContext {
     while($next_page_exists) {
 
       $page = $this->minkContext->getSession()->getPage();
-      $next_page_link = $page->find('css', '.next.page-numbers');
+      $next_page_link = $page->find('css', '.pager__item.pager__item--next a');
 
 
       if ($next_page_link) {
@@ -79,8 +79,6 @@ class PerformanceHelpers implements Context, SnippetAcceptingContext {
     }
     echo "last page visited was $next_page_url";
   }
-
-
 
 
   protected function openAllPostLinksOnASinglePage($page) {
@@ -106,14 +104,32 @@ class PerformanceHelpers implements Context, SnippetAcceptingContext {
 
   protected function getAllPostURLs($page) {
 
-    $post_links = $page->findAll('css', 'article h2 a');
+    $post_links = $page->findAll('css', 'article header h2 a');
 
     $post_urls = [];
     foreach ($post_links as $post_link) {
       $post_urls[] =$post_link->getAttribute('href');
     }
 
+    print_r($post_urls);
+
     return $post_urls;
   }
 
+
+
+  /**
+   * @Given I log in as an admin
+   */
+  public function ILogInAsAnAdmin()
+  {
+    $this->minkContext->visit('user');
+    $this->minkContext->fillField('name', getenv('DRUPAL_ADMIN_USERNAME'));
+    $this->minkContext->fillField('pass', getenv('DRUPAL_ADMIN_PASSWORD'));
+    $this->minkContext->pressButton('Log in');
+    $this->minkContext->printCurrentUrl();
+    $this->minkContext->visit('admin');
+    $this->minkContext->printCurrentUrl();
+
+  }
 }
