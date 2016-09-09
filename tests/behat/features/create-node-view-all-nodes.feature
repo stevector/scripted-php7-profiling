@@ -1,7 +1,279 @@
 Feature: Create node, view all nodes
 
 
- @api
-  Scenario: Saving Form Mode
-    Given I am logged in as a user with the "administrator" role
 
+  Background:
+    Given I log in as an admin
+
+ @api
+  Scenario: Create node, view all nodes
+
+When I visit "node/add/article"
+And I fill in "title[0][value]" with "Test article title"
+And I fill in "title[0][value]" with a random string "12" characters long
+And I press the "Save and publish" button
+When I visit "node/add/article"
+And I fill in "title[0][value]" with "Test article title"
+And I fill in "title[0][value]" with a random string "12" characters long
+And I press the "Save and publish" button
+When I visit "node/add/article"
+And I fill in "title[0][value]" with "Test article title"
+And I fill in "title[0][value]" with a random string "12" characters long
+And I press the "Save and publish" button
+When I visit "node/add/article"
+And I fill in "title[0][value]" with "Test article title"
+And I fill in "title[0][value]" with a random string "12" characters long
+And I press the "Save and publish" button
+When I visit "node/add/article"
+And I fill in "title[0][value]" with "Test article title"
+And I fill in "title[0][value]" with a random string "12" characters long
+And I press the "Save and publish" button
+When I visit "node/add/article"
+And I fill in "title[0][value]" with "Test article title"
+And I fill in "title[0][value]" with a random string "12" characters long
+And I press the "Save and publish" button
+When I visit "node/add/article"
+And I fill in "title[0][value]" with "Test article title"
+And I fill in "title[0][value]" with a random string "12" characters long
+And I press the "Save and publish" button
+When I visit "node/add/article"
+And I fill in "title[0][value]" with "Test article title"
+And I fill in "title[0][value]" with a random string "12" characters long
+And I press the "Save and publish" button
+When I visit "node/add/article"
+And I fill in "title[0][value]" with "Test article title"
+And I fill in "title[0][value]" with a random string "12" characters long
+And I press the "Save and publish" button
+When I visit "node/add/article"
+And I fill in "title[0][value]" with "Test article title"
+And I fill in "title[0][value]" with a random string "12" characters long
+And I press the "Save and publish" button
+When I visit "node/add/article"
+And I fill in "title[0][value]" with "Test article title"
+And I fill in "title[0][value]" with a random string "12" characters long
+And I press the "Save and publish" button
+When I visit "node/add/article"
+And I fill in "title[0][value]" with "Test article title"
+And I fill in "title[0][value]" with a random string "12" characters long
+And I press the "Save and publish" button
+When I visit "node/add/article"
+And I fill in "title[0][value]" with "Test article title"
+And I fill in "title[0][value]" with a random string "12" characters long
+And I press the "Save and publish" button
+When I visit "node/add/article"
+And I fill in "title[0][value]" with "Test article title"
+And I fill in "title[0][value]" with a random string "12" characters long
+And I press the "Save and publish" button
+When I visit "node/add/article"
+And I fill in "title[0][value]" with "Test article title"
+And I fill in "title[0][value]" with a random string "12" characters long
+And I press the "Save and publish" button
+When I visit "node/add/article"
+And I fill in "title[0][value]" with "Test article title"
+And I fill in "title[0][value]" with a random string "12" characters long
+And I press the "Save and publish" button
+When I open the links to all homepage posts
+
+
+
+
+
+
+When I visit "node/add/article"
+And I fill in "title[0][value]" with "Test article title"
+And I fill in "title[0][value]" with a random string "12" characters long
+And I press the "Save and publish" button
+When I visit "node/add/article"
+And I fill in "title[0][value]" with "Test article title"
+And I fill in "title[0][value]" with a random string "12" characters long
+And I press the "Save and publish" button
+When I visit "node/add/article"
+And I fill in "title[0][value]" with "Test article title"
+And I fill in "title[0][value]" with a random string "12" characters long
+And I press the "Save and publish" button
+When I visit "node/add/article"
+And I fill in "title[0][value]" with "Test article title"
+And I fill in "title[0][value]" with a random string "12" characters long
+And I press the "Save and publish" button
+When I visit "node/add/article"
+And I fill in "title[0][value]" with "Test article title"
+And I fill in "title[0][value]" with a random string "12" characters long
+And I press the "Save and publish" button
+When I visit "node/add/article"
+And I fill in "title[0][value]" with "Test article title"
+And I fill in "title[0][value]" with a random string "12" characters long
+And I press the "Save and publish" button
+When I visit "node/add/article"
+And I fill in "title[0][value]" with "Test article title"
+And I fill in "title[0][value]" with a random string "12" characters long
+And I press the "Save and publish" button
+When I visit "node/add/article"
+And I fill in "title[0][value]" with "Test article title"
+And I fill in "title[0][value]" with a random string "12" characters long
+And I press the "Save and publish" button
+When I visit "node/add/article"
+And I fill in "title[0][value]" with "Test article title"
+And I fill in "title[0][value]" with a random string "12" characters long
+And I press the "Save and publish" button
+When I visit "node/add/article"
+And I fill in "title[0][value]" with "Test article title"
+And I fill in "title[0][value]" with a random string "12" characters long
+And I press the "Save and publish" button
+When I visit "node/add/article"
+And I fill in "title[0][value]" with "Test article title"
+And I fill in "title[0][value]" with a random string "12" characters long
+And I press the "Save and publish" button
+When I visit "node/add/article"
+And I fill in "title[0][value]" with "Test article title"
+And I fill in "title[0][value]" with a random string "12" characters long
+And I press the "Save and publish" button
+When I visit "node/add/article"
+And I fill in "title[0][value]" with "Test article title"
+And I fill in "title[0][value]" with a random string "12" characters long
+And I press the "Save and publish" button
+When I visit "node/add/article"
+And I fill in "title[0][value]" with "Test article title"
+And I fill in "title[0][value]" with a random string "12" characters long
+And I press the "Save and publish" button
+When I visit "node/add/article"
+And I fill in "title[0][value]" with "Test article title"
+And I fill in "title[0][value]" with a random string "12" characters long
+And I press the "Save and publish" button
+When I visit "node/add/article"
+And I fill in "title[0][value]" with "Test article title"
+And I fill in "title[0][value]" with a random string "12" characters long
+And I press the "Save and publish" button
+When I open the links to all homepage posts
+
+
+When I visit "node/add/article"
+And I fill in "title[0][value]" with "Test article title"
+And I fill in "title[0][value]" with a random string "12" characters long
+And I press the "Save and publish" button
+When I visit "node/add/article"
+And I fill in "title[0][value]" with "Test article title"
+And I fill in "title[0][value]" with a random string "12" characters long
+And I press the "Save and publish" button
+When I visit "node/add/article"
+And I fill in "title[0][value]" with "Test article title"
+And I fill in "title[0][value]" with a random string "12" characters long
+And I press the "Save and publish" button
+When I visit "node/add/article"
+And I fill in "title[0][value]" with "Test article title"
+And I fill in "title[0][value]" with a random string "12" characters long
+And I press the "Save and publish" button
+When I visit "node/add/article"
+And I fill in "title[0][value]" with "Test article title"
+And I fill in "title[0][value]" with a random string "12" characters long
+And I press the "Save and publish" button
+When I visit "node/add/article"
+And I fill in "title[0][value]" with "Test article title"
+And I fill in "title[0][value]" with a random string "12" characters long
+And I press the "Save and publish" button
+When I visit "node/add/article"
+And I fill in "title[0][value]" with "Test article title"
+And I fill in "title[0][value]" with a random string "12" characters long
+And I press the "Save and publish" button
+When I visit "node/add/article"
+And I fill in "title[0][value]" with "Test article title"
+And I fill in "title[0][value]" with a random string "12" characters long
+And I press the "Save and publish" button
+When I visit "node/add/article"
+And I fill in "title[0][value]" with "Test article title"
+And I fill in "title[0][value]" with a random string "12" characters long
+And I press the "Save and publish" button
+When I visit "node/add/article"
+And I fill in "title[0][value]" with "Test article title"
+And I fill in "title[0][value]" with a random string "12" characters long
+And I press the "Save and publish" button
+When I visit "node/add/article"
+And I fill in "title[0][value]" with "Test article title"
+And I fill in "title[0][value]" with a random string "12" characters long
+And I press the "Save and publish" button
+When I visit "node/add/article"
+And I fill in "title[0][value]" with "Test article title"
+And I fill in "title[0][value]" with a random string "12" characters long
+And I press the "Save and publish" button
+When I visit "node/add/article"
+And I fill in "title[0][value]" with "Test article title"
+And I fill in "title[0][value]" with a random string "12" characters long
+And I press the "Save and publish" button
+When I visit "node/add/article"
+And I fill in "title[0][value]" with "Test article title"
+And I fill in "title[0][value]" with a random string "12" characters long
+And I press the "Save and publish" button
+When I visit "node/add/article"
+And I fill in "title[0][value]" with "Test article title"
+And I fill in "title[0][value]" with a random string "12" characters long
+And I press the "Save and publish" button
+When I visit "node/add/article"
+And I fill in "title[0][value]" with "Test article title"
+And I fill in "title[0][value]" with a random string "12" characters long
+And I press the "Save and publish" button
+When I open the links to all homepage posts
+
+When I visit "node/add/article"
+And I fill in "title[0][value]" with "Test article title"
+And I fill in "title[0][value]" with a random string "12" characters long
+And I press the "Save and publish" button
+When I visit "node/add/article"
+And I fill in "title[0][value]" with "Test article title"
+And I fill in "title[0][value]" with a random string "12" characters long
+And I press the "Save and publish" button
+When I visit "node/add/article"
+And I fill in "title[0][value]" with "Test article title"
+And I fill in "title[0][value]" with a random string "12" characters long
+And I press the "Save and publish" button
+When I visit "node/add/article"
+And I fill in "title[0][value]" with "Test article title"
+And I fill in "title[0][value]" with a random string "12" characters long
+And I press the "Save and publish" button
+When I visit "node/add/article"
+And I fill in "title[0][value]" with "Test article title"
+And I fill in "title[0][value]" with a random string "12" characters long
+And I press the "Save and publish" button
+When I visit "node/add/article"
+And I fill in "title[0][value]" with "Test article title"
+And I fill in "title[0][value]" with a random string "12" characters long
+And I press the "Save and publish" button
+When I visit "node/add/article"
+And I fill in "title[0][value]" with "Test article title"
+And I fill in "title[0][value]" with a random string "12" characters long
+And I press the "Save and publish" button
+When I visit "node/add/article"
+And I fill in "title[0][value]" with "Test article title"
+And I fill in "title[0][value]" with a random string "12" characters long
+And I press the "Save and publish" button
+When I visit "node/add/article"
+And I fill in "title[0][value]" with "Test article title"
+And I fill in "title[0][value]" with a random string "12" characters long
+And I press the "Save and publish" button
+When I visit "node/add/article"
+And I fill in "title[0][value]" with "Test article title"
+And I fill in "title[0][value]" with a random string "12" characters long
+And I press the "Save and publish" button
+When I visit "node/add/article"
+And I fill in "title[0][value]" with "Test article title"
+And I fill in "title[0][value]" with a random string "12" characters long
+And I press the "Save and publish" button
+When I visit "node/add/article"
+And I fill in "title[0][value]" with "Test article title"
+And I fill in "title[0][value]" with a random string "12" characters long
+And I press the "Save and publish" button
+When I visit "node/add/article"
+And I fill in "title[0][value]" with "Test article title"
+And I fill in "title[0][value]" with a random string "12" characters long
+And I press the "Save and publish" button
+When I visit "node/add/article"
+And I fill in "title[0][value]" with "Test article title"
+And I fill in "title[0][value]" with a random string "12" characters long
+And I press the "Save and publish" button
+When I visit "node/add/article"
+And I fill in "title[0][value]" with "Test article title"
+And I fill in "title[0][value]" with a random string "12" characters long
+And I press the "Save and publish" button
+When I visit "node/add/article"
+And I fill in "title[0][value]" with "Test article title"
+And I fill in "title[0][value]" with a random string "12" characters long
+And I press the "Save and publish" button
+When I open the links to all homepage posts
