@@ -75,8 +75,8 @@ terminus site clear-cache
 } &> /dev/null
 
 
-
-for i in $(seq 3); do
+cd ..
+for i in $(seq 10); do
   echo "Peformance test pass $i with LCache"
   ./../../vendor/bin/behat --config=../behat/behat-pantheon.yml ../behat/features/create-node-view-all-nodes.feature
 done
