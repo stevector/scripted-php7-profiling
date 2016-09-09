@@ -14,5 +14,8 @@
             "type": "composer",
             "url": "https://packages.drupal.org/8"
         }
+    },
+    "autoload": {
+        "psr-4": { "scripted_php7_profiling\\Behat\\": "tests/behat/bootstrap/" }
     }
 }

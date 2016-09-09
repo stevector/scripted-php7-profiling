@@ -3,3 +3,5 @@
 # composer.lock, but not vendor.
 /vendor
 /tests/circle-scripts/php-profiling-steve/
+drush
+core

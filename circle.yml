@@ -5,13 +5,21 @@ machine:
     version: 7.0.7
   environment:
     # DB config. Using default CircleCI's database.
-    TERMINUS_ENV: ci-$(echo $CIRCLE_SHA1 | cut -c1-8)
+    #TERMINUS_ENV: ci-$(echo $CIRCLE_SHA1 | cut -c1-8)
+    TERMINUS_ENV: ci-$CIRCLE_BUILD_NUM
     TERMINUS_SITE: php-profiling-steve
+    DRUPAL_ADMIN_USERNAME: pantheon
+    # A random password is set in the dependencies:pre stage as a text file.
+    # This line reads the same file repeatedly. If the openssl call were used
+    # in this step, it would result in a different password being used in each
+    # line of other steps. Each CircleCI command runs in a separate shell.
+    DRUPAL_ADMIN_PASSWORD: $(cat ~/DRUPAL_ADMIN_PASSWORD)
 
 dependencies:
   cache_directories:
     - ~/.composer/cache
   pre:
+    - echo $(openssl rand -hex 8) > ~/DRUPAL_ADMIN_PASSWORD
     # Set the PHP timezone so that Behat script does not fail.
     # Using > instead of >> will overwrite the file and disable xdebug.
     # xdebug makes composer slower.
@@ -34,4 +42,4 @@ test:
     - cd tests/circle-scripts && ./setup-d8-repo.sh
 
   override:
-    - cd tests/circle-scripts && ./php56-vs-php7-behat.sh
+    - cd tests/circle-scripts && ./lcache.sh
