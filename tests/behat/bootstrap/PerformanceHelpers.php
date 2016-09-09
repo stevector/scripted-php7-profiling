@@ -127,9 +127,9 @@ class PerformanceHelpers implements Context, SnippetAcceptingContext {
     $this->minkContext->fillField('name', getenv('DRUPAL_ADMIN_USERNAME'));
     $this->minkContext->fillField('pass', getenv('DRUPAL_ADMIN_PASSWORD'));
     $this->minkContext->pressButton('Log in');
-    $this->minkContext->printCurrentUrl();
+    //$this->minkContext->printCurrentUrl();
     $this->minkContext->visit('admin');
-    $this->minkContext->printCurrentUrl();
+    //$this->minkContext->printCurrentUrl();
 
   }
 }

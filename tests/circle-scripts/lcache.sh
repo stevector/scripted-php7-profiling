@@ -40,7 +40,7 @@ terminus site clear-cache
 
 
 cd ..
-for i in $(seq 20); do
+for i in $(seq 200); do
   echo "Peformance test pass $i with Core"
   ./../../vendor/bin/behat --config=../behat/behat-pantheon.yml ../behat/features/create-node-view-all-nodes.feature
 done
@@ -48,8 +48,9 @@ done
 cd ${TERMINUS_SITE}
 sleep 15
 
-composer config repositories.drupal composer https://packages.drupal.org/8
-composer require drupal/lcache:1.x-dev
+#composer config repositories.drupal composer https://packages.drupal.org/8
+composer config repositories.d8lcache vcs git@github.com:lcache/drupal-8.git
+composer require drupal/lcache:dev-master#1b81f310635439ef37a4bd97de08d4bb68de05b9
 
 # A .git directory might in modules/lcache/
 git add modules/lcache/*
@@ -83,7 +84,7 @@ git push
 
 
 cd ..
-for i in $(seq 20); do
+for i in $(seq 200); do
   echo "Peformance test pass $i with LCache"
   ./../../vendor/bin/behat --config=../behat/behat-pantheon.yml ../behat/features/create-node-view-all-nodes.feature
 done
