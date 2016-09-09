@@ -40,7 +40,7 @@ terminus site clear-cache
 
 
 cd ..
-for i in $(seq 2); do
+for i in $(seq 200); do
   echo "Peformance test pass $i with Core"
   ./../../vendor/bin/behat --config=../behat/behat-pantheon.yml ../behat/features/create-node-view-all-nodes.feature
 done
@@ -83,7 +83,7 @@ git push
 
 
 cd ..
-for i in $(seq 2); do
+for i in $(seq 200); do
   echo "Peformance test pass $i with LCache"
   ./../../vendor/bin/behat --config=../behat/behat-pantheon.yml ../behat/features/create-node-view-all-nodes.feature
 done
