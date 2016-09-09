@@ -4,9 +4,9 @@ set -ex
 
 
 # Create a drush alias file so that Behat tests can be executed against Pantheon.
-#terminus sites aliases
+terminus sites aliases
 # Drush Behat driver fails without this option.
-#echo "\$options['strict'] = 0;" >> ~/.drush/pantheon.aliases.drushrc.php
+echo "\$options['strict'] = 0;" >> ~/.drush/pantheon.aliases.drushrc.php
 
 export BEHAT_PARAMS='{"extensions" : {"Behat\\MinkExtension" : {"base_url" : "http://'$TERMINUS_ENV'-'$TERMINUS_SITE'.pantheonsite.io/"}, "Drupal\\DrupalExtension" : {"drush" :   {  "alias":  "@pantheon.'$TERMINUS_SITE'.'$TERMINUS_ENV'" }}}}'
 
@@ -40,8 +40,8 @@ terminus site clear-cache
 
 
 cd ..
-for i in $(seq 200); do
-  echo "Peformance test pass $i with LCache"
+for i in $(seq 2); do
+  echo "Peformance test pass $i with Core"
   ./../../vendor/bin/behat --config=../behat/behat-pantheon.yml ../behat/features/create-node-view-all-nodes.feature
 done
 
@@ -64,6 +64,13 @@ sleep 60
 terminus drush "en lcache -y"
 terminus site clear-cache
 
+echo "\$settings['cache']['default'] = 'cache.backend.lcache';" >> sites/default/settings.php
+
+
+git add .
+git commit -m 'LCache in settings.php'
+git push
+
 
 # Make a custom admin user because the normal Drush/Behat way of creating users
 # 1) is slow and 2) would require rerunning with each Behat run and 3)
@@ -76,7 +83,7 @@ terminus site clear-cache
 
 
 cd ..
-for i in $(seq 200); do
+for i in $(seq 2); do
   echo "Peformance test pass $i with LCache"
   ./../../vendor/bin/behat --config=../behat/behat-pantheon.yml ../behat/features/create-node-view-all-nodes.feature
 done
