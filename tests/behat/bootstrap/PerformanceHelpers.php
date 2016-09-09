@@ -61,7 +61,7 @@ class PerformanceHelpers implements Context, SnippetAcceptingContext {
     while($next_page_exists) {
 
       $page = $this->minkContext->getSession()->getPage();
-      $next_page_link = $page->find('css', '.pager__item.pager__item--next a');
+      $next_page_link = $page->find('css', '.pager__item--next a');
 
 
       if ($next_page_link) {
@@ -111,7 +111,7 @@ class PerformanceHelpers implements Context, SnippetAcceptingContext {
       $post_urls[] =$post_link->getAttribute('href');
     }
 
-    print_r($post_urls);
+    print_r($post_urls[0]);
 
     return $post_urls;
   }
