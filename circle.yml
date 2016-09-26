@@ -6,8 +6,7 @@ machine:
   environment:
     # DB config. Using default CircleCI's database.
     TERMINUS_ENV: ci-$(echo $CIRCLE_SHA1 | cut -c1-8)
-    # DrupalCon Dublin
-    TERMINUS_SITE: 4c056e7a-02d4-4204-9fb0-21d956afdca7
+    TERMINUS_SITE: drupalcon-dublin-demo
 
 dependencies:
   cache_directories:
