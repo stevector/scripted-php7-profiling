@@ -4,10 +4,10 @@ Feature: Views Form Mode
   Scenario: Saving Form Mode
     Given I am logged in as a user with the "administrator" role
 
-    When I visit "admin/structure/types/manage/article/form-display"
+    When I visit "admin/structure/types/manage/pages/form-display"
     And I press the "Save" button
 
-    When I visit "admin/structure/types/manage/article/fields/node.article.comment"
+    When I visit "admin/structure/types/manage/pages/fields/node.pages.body"
     And I press the "Save settings" button
 
     When I visit "admin/appearance"
@@ -39,10 +39,10 @@ Feature: Views Form Mode
 
 
 
-    When I visit "admin/structure/types/manage/article/form-display"
+    When I visit "admin/structure/types/manage/pages/form-display"
     And I press the "Save" button
 
-    When I visit "admin/structure/types/manage/article/fields/node.article.comment"
+    When I visit "admin/structure/types/manage/pages/fields/node.pages.body"
     And I press the "Save settings" button
 
     When I visit "admin/appearance"
@@ -74,10 +74,10 @@ Feature: Views Form Mode
 
 
 
-    When I visit "admin/structure/types/manage/article/form-display"
+    When I visit "admin/structure/types/manage/pages/form-display"
     And I press the "Save" button
 
-    When I visit "admin/structure/types/manage/article/fields/node.article.comment"
+    When I visit "admin/structure/types/manage/pages/fields/node.pages.body"
     And I press the "Save settings" button
 
     When I visit "admin/appearance"
@@ -109,10 +109,10 @@ Feature: Views Form Mode
 
 
 
-    When I visit "admin/structure/types/manage/article/form-display"
+    When I visit "admin/structure/types/manage/pages/form-display"
     And I press the "Save" button
 
-    When I visit "admin/structure/types/manage/article/fields/node.article.comment"
+    When I visit "admin/structure/types/manage/pages/fields/node.pages.body"
     And I press the "Save settings" button
 
     When I visit "admin/appearance"
@@ -144,10 +144,10 @@ Feature: Views Form Mode
 
 
 
-    When I visit "admin/structure/types/manage/article/form-display"
+    When I visit "admin/structure/types/manage/pages/form-display"
     And I press the "Save" button
 
-    When I visit "admin/structure/types/manage/article/fields/node.article.comment"
+    When I visit "admin/structure/types/manage/pages/fields/node.pages.body"
     And I press the "Save settings" button
 
     When I visit "admin/appearance"
@@ -179,10 +179,10 @@ Feature: Views Form Mode
 
 
 
-    When I visit "admin/structure/types/manage/article/form-display"
+    When I visit "admin/structure/types/manage/pages/form-display"
     And I press the "Save" button
 
-    When I visit "admin/structure/types/manage/article/fields/node.article.comment"
+    When I visit "admin/structure/types/manage/pages/fields/node.pages.body"
     And I press the "Save settings" button
 
     When I visit "admin/appearance"
@@ -214,10 +214,10 @@ Feature: Views Form Mode
 
 
 
-    When I visit "admin/structure/types/manage/article/form-display"
+    When I visit "admin/structure/types/manage/pages/form-display"
     And I press the "Save" button
 
-    When I visit "admin/structure/types/manage/article/fields/node.article.comment"
+    When I visit "admin/structure/types/manage/pages/fields/node.pages.body"
     And I press the "Save settings" button
 
     When I visit "admin/appearance"
@@ -249,10 +249,10 @@ Feature: Views Form Mode
 
 
 
-    When I visit "admin/structure/types/manage/article/form-display"
+    When I visit "admin/structure/types/manage/pages/form-display"
     And I press the "Save" button
 
-    When I visit "admin/structure/types/manage/article/fields/node.article.comment"
+    When I visit "admin/structure/types/manage/pages/fields/node.pages.body"
     And I press the "Save settings" button
 
     When I visit "admin/appearance"
@@ -284,10 +284,10 @@ Feature: Views Form Mode
 
 
 
-    When I visit "admin/structure/types/manage/article/form-display"
+    When I visit "admin/structure/types/manage/pages/form-display"
     And I press the "Save" button
 
-    When I visit "admin/structure/types/manage/article/fields/node.article.comment"
+    When I visit "admin/structure/types/manage/pages/fields/node.pages.body"
     And I press the "Save settings" button
 
     When I visit "admin/appearance"
@@ -319,10 +319,10 @@ Feature: Views Form Mode
 
 
 
-    When I visit "admin/structure/types/manage/article/form-display"
+    When I visit "admin/structure/types/manage/pages/form-display"
     And I press the "Save" button
 
-    When I visit "admin/structure/types/manage/article/fields/node.article.comment"
+    When I visit "admin/structure/types/manage/pages/fields/node.pages.body"
     And I press the "Save settings" button
 
     When I visit "admin/appearance"
@@ -354,10 +354,10 @@ Feature: Views Form Mode
 
 
 
-    When I visit "admin/structure/types/manage/article/form-display"
+    When I visit "admin/structure/types/manage/pages/form-display"
     And I press the "Save" button
 
-    When I visit "admin/structure/types/manage/article/fields/node.article.comment"
+    When I visit "admin/structure/types/manage/pages/fields/node.pages.body"
     And I press the "Save settings" button
 
     When I visit "admin/appearance"
@@ -389,10 +389,10 @@ Feature: Views Form Mode
 
 
 
-    When I visit "admin/structure/types/manage/article/form-display"
+    When I visit "admin/structure/types/manage/pages/form-display"
     And I press the "Save" button
 
-    When I visit "admin/structure/types/manage/article/fields/node.article.comment"
+    When I visit "admin/structure/types/manage/pages/fields/node.pages.body"
     And I press the "Save settings" button
 
     When I visit "admin/appearance"
@@ -424,10 +424,10 @@ Feature: Views Form Mode
 
 
 
-    When I visit "admin/structure/types/manage/article/form-display"
+    When I visit "admin/structure/types/manage/pages/form-display"
     And I press the "Save" button
 
-    When I visit "admin/structure/types/manage/article/fields/node.article.comment"
+    When I visit "admin/structure/types/manage/pages/fields/node.pages.body"
     And I press the "Save settings" button
 
     When I visit "admin/appearance"
@@ -459,10 +459,10 @@ Feature: Views Form Mode
 
 
 
-    When I visit "admin/structure/types/manage/article/form-display"
+    When I visit "admin/structure/types/manage/pages/form-display"
     And I press the "Save" button
 
-    When I visit "admin/structure/types/manage/article/fields/node.article.comment"
+    When I visit "admin/structure/types/manage/pages/fields/node.pages.body"
     And I press the "Save settings" button
 
     When I visit "admin/appearance"
@@ -494,10 +494,10 @@ Feature: Views Form Mode
 
 
 
-    When I visit "admin/structure/types/manage/article/form-display"
+    When I visit "admin/structure/types/manage/pages/form-display"
     And I press the "Save" button
 
-    When I visit "admin/structure/types/manage/article/fields/node.article.comment"
+    When I visit "admin/structure/types/manage/pages/fields/node.pages.body"
     And I press the "Save settings" button
 
     When I visit "admin/appearance"
@@ -529,10 +529,10 @@ Feature: Views Form Mode
 
 
 
-    When I visit "admin/structure/types/manage/article/form-display"
+    When I visit "admin/structure/types/manage/pages/form-display"
     And I press the "Save" button
 
-    When I visit "admin/structure/types/manage/article/fields/node.article.comment"
+    When I visit "admin/structure/types/manage/pages/fields/node.pages.body"
     And I press the "Save settings" button
 
     When I visit "admin/appearance"
@@ -564,10 +564,10 @@ Feature: Views Form Mode
 
 
 
-    When I visit "admin/structure/types/manage/article/form-display"
+    When I visit "admin/structure/types/manage/pages/form-display"
     And I press the "Save" button
 
-    When I visit "admin/structure/types/manage/article/fields/node.article.comment"
+    When I visit "admin/structure/types/manage/pages/fields/node.pages.body"
     And I press the "Save settings" button
 
     When I visit "admin/appearance"
@@ -599,10 +599,10 @@ Feature: Views Form Mode
 
 
 
-    When I visit "admin/structure/types/manage/article/form-display"
+    When I visit "admin/structure/types/manage/pages/form-display"
     And I press the "Save" button
 
-    When I visit "admin/structure/types/manage/article/fields/node.article.comment"
+    When I visit "admin/structure/types/manage/pages/fields/node.pages.body"
     And I press the "Save settings" button
 
     When I visit "admin/appearance"
@@ -634,10 +634,10 @@ Feature: Views Form Mode
 
 
 
-    When I visit "admin/structure/types/manage/article/form-display"
+    When I visit "admin/structure/types/manage/pages/form-display"
     And I press the "Save" button
 
-    When I visit "admin/structure/types/manage/article/fields/node.article.comment"
+    When I visit "admin/structure/types/manage/pages/fields/node.pages.body"
     And I press the "Save settings" button
 
     When I visit "admin/appearance"
@@ -669,10 +669,10 @@ Feature: Views Form Mode
 
 
 
-    When I visit "admin/structure/types/manage/article/form-display"
+    When I visit "admin/structure/types/manage/pages/form-display"
     And I press the "Save" button
 
-    When I visit "admin/structure/types/manage/article/fields/node.article.comment"
+    When I visit "admin/structure/types/manage/pages/fields/node.pages.body"
     And I press the "Save settings" button
 
     When I visit "admin/appearance"
@@ -704,10 +704,10 @@ Feature: Views Form Mode
 
 
 
-    When I visit "admin/structure/types/manage/article/form-display"
+    When I visit "admin/structure/types/manage/pages/form-display"
     And I press the "Save" button
 
-    When I visit "admin/structure/types/manage/article/fields/node.article.comment"
+    When I visit "admin/structure/types/manage/pages/fields/node.pages.body"
     And I press the "Save settings" button
 
     When I visit "admin/appearance"
@@ -739,10 +739,10 @@ Feature: Views Form Mode
 
 
 
-    When I visit "admin/structure/types/manage/article/form-display"
+    When I visit "admin/structure/types/manage/pages/form-display"
     And I press the "Save" button
 
-    When I visit "admin/structure/types/manage/article/fields/node.article.comment"
+    When I visit "admin/structure/types/manage/pages/fields/node.pages.body"
     And I press the "Save settings" button
 
     When I visit "admin/appearance"
@@ -774,10 +774,10 @@ Feature: Views Form Mode
 
 
 
-    When I visit "admin/structure/types/manage/article/form-display"
+    When I visit "admin/structure/types/manage/pages/form-display"
     And I press the "Save" button
 
-    When I visit "admin/structure/types/manage/article/fields/node.article.comment"
+    When I visit "admin/structure/types/manage/pages/fields/node.pages.body"
     And I press the "Save settings" button
 
     When I visit "admin/appearance"
@@ -809,10 +809,10 @@ Feature: Views Form Mode
 
 
 
-    When I visit "admin/structure/types/manage/article/form-display"
+    When I visit "admin/structure/types/manage/pages/form-display"
     And I press the "Save" button
 
-    When I visit "admin/structure/types/manage/article/fields/node.article.comment"
+    When I visit "admin/structure/types/manage/pages/fields/node.pages.body"
     And I press the "Save settings" button
 
     When I visit "admin/appearance"
@@ -844,10 +844,10 @@ Feature: Views Form Mode
 
 
 
-    When I visit "admin/structure/types/manage/article/form-display"
+    When I visit "admin/structure/types/manage/pages/form-display"
     And I press the "Save" button
 
-    When I visit "admin/structure/types/manage/article/fields/node.article.comment"
+    When I visit "admin/structure/types/manage/pages/fields/node.pages.body"
     And I press the "Save settings" button
 
     When I visit "admin/appearance"
@@ -879,10 +879,10 @@ Feature: Views Form Mode
 
 
 
-    When I visit "admin/structure/types/manage/article/form-display"
+    When I visit "admin/structure/types/manage/pages/form-display"
     And I press the "Save" button
 
-    When I visit "admin/structure/types/manage/article/fields/node.article.comment"
+    When I visit "admin/structure/types/manage/pages/fields/node.pages.body"
     And I press the "Save settings" button
 
     When I visit "admin/appearance"
@@ -914,10 +914,10 @@ Feature: Views Form Mode
 
 
 
-    When I visit "admin/structure/types/manage/article/form-display"
+    When I visit "admin/structure/types/manage/pages/form-display"
     And I press the "Save" button
 
-    When I visit "admin/structure/types/manage/article/fields/node.article.comment"
+    When I visit "admin/structure/types/manage/pages/fields/node.pages.body"
     And I press the "Save settings" button
 
     When I visit "admin/appearance"
@@ -949,10 +949,10 @@ Feature: Views Form Mode
 
 
 
-    When I visit "admin/structure/types/manage/article/form-display"
+    When I visit "admin/structure/types/manage/pages/form-display"
     And I press the "Save" button
 
-    When I visit "admin/structure/types/manage/article/fields/node.article.comment"
+    When I visit "admin/structure/types/manage/pages/fields/node.pages.body"
     And I press the "Save settings" button
 
     When I visit "admin/appearance"
@@ -984,10 +984,10 @@ Feature: Views Form Mode
 
 
 
-    When I visit "admin/structure/types/manage/article/form-display"
+    When I visit "admin/structure/types/manage/pages/form-display"
     And I press the "Save" button
 
-    When I visit "admin/structure/types/manage/article/fields/node.article.comment"
+    When I visit "admin/structure/types/manage/pages/fields/node.pages.body"
     And I press the "Save settings" button
 
     When I visit "admin/appearance"
