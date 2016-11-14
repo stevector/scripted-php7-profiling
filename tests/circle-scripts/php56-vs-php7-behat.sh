@@ -14,7 +14,7 @@ cd ${TERMINUS_SITE}
 echo "php_version: 5.6" >> pantheon.yml
 
 git add pantheon.yml
-git commit -m 'Setting php 5.6'
+git commit -m 'Setting PHP 5.6'
 git push
 
 sleep 30
@@ -28,7 +28,7 @@ sleep 15
 echo "php_version: 7.0" >> pantheon.yml
 
 git add pantheon.yml
-git commit -m 'Setting php 7.0'
+git commit -m 'Setting PHP 7.0'
 git push
 
 sleep 60
