@@ -1,8 +1,6 @@
 <?php
 
 
-namespace WPLCache\Behat;
-
 use Behat\Behat\Context\Context;
 use Behat\Behat\Context\SnippetAcceptingContext;
 use Behat\MinkExtension\Context\MinkContext;
@@ -82,6 +80,43 @@ class PerformanceHelpers implements Context, SnippetAcceptingContext {
 
 
 
+  /**
+   * @When I open the links to all admin list posts
+   */
+  public function iOpenTheLinksToAllAdminListPosts()
+  {
+
+    $this->minkContext->visit("/wp-admin/edit.php");
+
+
+    $next_page_exists = TRUE;
+    $next_page_url ='';
+
+    while($next_page_exists) {
+
+      $page = $this->minkContext->getSession()->getPage();
+      $next_page_link = $page->find('css', '.next-page');
+
+
+      if ($next_page_link) {
+        $next_page_url = $next_page_link->getAttribute('href');
+      }
+      else {
+        $next_page_exists = FALSE;
+      }
+
+      $this->openAllPostLinksOnASinglePage($page);
+
+      if (!empty($next_page_link)) {
+        $this->minkContext->visit($next_page_url);
+      }
+    }
+    echo "last page visited was $next_page_url";
+  }
+
+
+
+
 
   protected function openAllPostLinksOnASinglePage($page) {
 
@@ -94,10 +129,10 @@ class PerformanceHelpers implements Context, SnippetAcceptingContext {
       $this->minkContext->visit($post_url);
 
 //      echo "\n";
-//      echo $this->minkContext->getSession()->getPage()->find('css', 'h1.entry-title')->getHtml();
-//      echo "\n";
-//      $this->minkContext->printCurrentUrl();
-//      echo "\n";
+//      echo $this->minkContext->getSession()->getPage()->find('css', 'meta')->getHtml();
+      echo "\n";
+      $this->minkContext->printCurrentUrl();
+      echo "\n";
     }
 
   }
@@ -106,7 +141,8 @@ class PerformanceHelpers implements Context, SnippetAcceptingContext {
 
   protected function getAllPostURLs($page) {
 
-    $post_links = $page->findAll('css', 'table.wp-list-table a.row-title');
+//    $post_links = $page->findAll('css', 'table.wp-list-table a.row-title');
+    $post_links = $page->findAll('css', '.row-actions .view a');
 
     $post_urls = [];
     foreach ($post_links as $post_link) {

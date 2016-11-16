@@ -38,12 +38,12 @@ yes | terminus site wipe
  } &> /dev/null
 
 
-exit;
-
-
 
 cd $BASH_DIR
- ./../../vendor/bin/behat --config=../behat/behat-pantheon.yml ../behat/features/
+for i in $(seq 100); do
+  echo "Peformance test pass $i with 5.6"
+  ./../../vendor/bin/behat --config=../behat/behat-pantheon.yml ../behat/features/
+done
 
 
 cd $PREPARE_DIR
@@ -64,4 +64,7 @@ yes | terminus site wipe
 
 
 cd $BASH_DIR
- ./../../vendor/bin/behat --config=../behat/behat-pantheon.yml ../behat/features/
+ for i in $(seq 100); do
+   echo "Peformance test pass $i with 7.0"
+   ./../../vendor/bin/behat --config=../behat/behat-pantheon.yml ../behat/features/
+ done

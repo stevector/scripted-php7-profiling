@@ -13,4 +13,5 @@ Feature: Create lots of posts
     Then print current URL
     And I should see "Post published."
 
-    And I open the links to all homepage posts
+
+  And I open the links to all admin list posts
