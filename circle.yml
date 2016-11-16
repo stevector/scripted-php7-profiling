@@ -5,7 +5,7 @@ machine:
     version: 7.0.7
   environment:
     # DB config. Using default CircleCI's database.
-    TERMINUS_ENV: ci-$(echo $CIRCLE_SHA1 | cut -c1-8)
+    TERMINUS_ENV: php5v7-$(echo $CIRCLE_SHA1 | cut -c1-4)
     TERMINUS_SITE: wordcamp-demo
     WORDPRESS_ADMIN_USERNAME: pantheon
     # A random password is set in the dependencies:pre stage as a text file.
