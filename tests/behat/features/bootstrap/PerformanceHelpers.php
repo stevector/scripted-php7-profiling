@@ -106,7 +106,7 @@ class PerformanceHelpers implements Context, SnippetAcceptingContext {
 
   protected function getAllPostURLs($page) {
 
-    $post_links = $page->findAll('css', 'article h2 a');
+    $post_links = $page->findAll('css', 'table.wp-list-table a.row-title');
 
     $post_urls = [];
     foreach ($post_links as $post_link) {
