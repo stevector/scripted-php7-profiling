@@ -39,20 +39,14 @@ class PerformanceHelpers implements Context, SnippetAcceptingContext {
   	for( $i = 0; $i < $length; $i++ ) {
   		$str .= $chars[ rand( 0, $size - 1 ) ];
   	}
-
   	return $str;
   }
-
 
   /**
    * @When I open the links to all homepage posts
    */
-  public function iOpenTheLinksToAllHomepagePosts()
-  {
-
+  public function iOpenTheLinksToAllHomepagePosts() {
     $this->minkContext->visit("/");
-
-
     $next_page_exists = TRUE;
     $next_page_url ='';
 
@@ -78,17 +72,12 @@ class PerformanceHelpers implements Context, SnippetAcceptingContext {
     echo "last page visited was $next_page_url";
   }
 
-
-
   /**
    * @When I open the links to all admin list posts
    */
-  public function iOpenTheLinksToAllAdminListPosts()
-  {
+  public function iOpenTheLinksToAllAdminListPosts() {
 
     $this->minkContext->visit("/wp-admin/edit.php");
-
-
     $next_page_exists = TRUE;
     $next_page_url ='';
 
@@ -114,41 +103,29 @@ class PerformanceHelpers implements Context, SnippetAcceptingContext {
     echo "last page visited was $next_page_url";
   }
 
-
-
-
-
   protected function openAllPostLinksOnASinglePage($page) {
-
-
-
     $post_urls = $this->getAllPostURLs($page);
 
     foreach ($post_urls as $post_url) {
 
       $this->minkContext->visit($post_url);
-
-//      echo "\n";
-//      echo $this->minkContext->getSession()->getPage()->find('css', 'meta')->getHtml();
+      // echo "\n";
+      // echo $this->minkContext->getSession()->getPage()->find('css', 'meta')->getHtml();
       echo "\n";
       $this->minkContext->printCurrentUrl();
       echo "\n";
     }
-
   }
-
-
 
   protected function getAllPostURLs($page) {
 
-//    $post_links = $page->findAll('css', 'table.wp-list-table a.row-title');
+    // $post_links = $page->findAll('css', 'table.wp-list-table a.row-title');
     $post_links = $page->findAll('css', '.row-actions .view a');
 
     $post_urls = [];
     foreach ($post_links as $post_link) {
       $post_urls[] =$post_link->getAttribute('href');
     }
-
     return $post_urls;
   }
 
