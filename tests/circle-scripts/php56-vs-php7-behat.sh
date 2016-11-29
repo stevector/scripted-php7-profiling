@@ -61,7 +61,6 @@ yes | terminus site wipe
    terminus wp "core install --title=$TERMINUS_ENV-$TERMINUS_SITE --url=$PANTHEON_SITE_URL --admin_user=$WORDPRESS_ADMIN_USERNAME --admin_email=wp-lcache@getpantheon.com --admin_password=$WORDPRESS_ADMIN_PASSWORD"
  } &> /dev/null
 
-
 cd $BASH_DIR
  for i in $(seq 50); do
    echo "Peformance test pass $i with 7.0"
