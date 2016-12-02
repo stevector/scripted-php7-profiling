@@ -1,18 +1,6 @@
 {
     "name": "stevector/scripted-php7-profiling",
     "require-dev": {
-        "drupal/coder": "2.0-beta1",
-        "squizlabs/php_codesniffer": "2.0.*@dev",
-        "drush-ops/behat-drush-endpoint": "*",
-        "drupal/drupal-extension": "dev-master",
-        "drupal/drupal-driver": "dev-master",
-        "drush/drush": "8.*",
-        "pantheon-systems/terminus": "^0.11.2"
-    },
-    "repositories": {
-        "drupal": {
-            "type": "composer",
-            "url": "https://packages.drupal.org/8"
-        }
+        "pantheon-systems/pantheon-wordpress-upstream-tests": "dev-master"
     }
 }
