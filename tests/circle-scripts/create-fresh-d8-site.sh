@@ -1,7 +1,16 @@
 #!/bin/bash
 
-# @todo, pull in upstream updates, wipe and install drupal.
-# Also, it might be cleaner to create an entirely new D8 site rather than making
-# multidevs off of the same one repeatedly.
-terminus site create-env --to-env=$TERMINUS_ENV --from-env=dev
+
+	# Get a list of all environments
+	PANTHEON_ENVS="$(terminus site environments --site=$TERMINUS_SITE --format=bash)"
+	terminus site environments --site=$TERMINUS_SITE
+
+	# If the multidev for this branch is found
+	if [[ ${PANTHEON_ENVS} == *"${TERMINUS_ENV}"* ]]
+	then
+		# Send a message
+		echo "Multidev found"
+	else
+		terminus site create-env --to-env=$TERMINUS_ENV --from-env=dev
+	fi
 
